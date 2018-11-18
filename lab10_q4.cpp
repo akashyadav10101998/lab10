@@ -8,17 +8,17 @@ class Point
 	public:
 //class constructor
 	Point(); 
-	// class constructor that tells us about x and y coordinate is x1 and y1
+	// class constructor that tells us about x and y coordinate is xval and yval
 
-	Point(int x1, int y1);
+	Point(int xval, int yval);
 	// function to move x and y as dx, dy is made
 	void Move(int dx, int dy);
 	//  functions to get value of x, y:
 	int Get_X() const;
 	int Get_Y() const;
-	//  functions for setting x, y to x1, y1 are:  
-	void Set_X(int x1);
-	void Set_Y(int y1);
+	//  functions for setting x, y to xval, yval are:  
+	void Set_X(int xval);
+	void Set_Y(int yval);
 
 	void print();
 //making private data memberswhich can represent x and y 
@@ -37,10 +37,10 @@ Point::Point()
 	Y = 0;
 }
 // class constructor sets X, Y to given values x1,y1
-Point::Point(int x1, int y1)
+Point::Point(int xval, int yval)
 {
-	X = x1;
-	Y = y1;
+	X = xval
+	Y = yval;
 }
 //our  function executes and increases x and y to x+dx to y+dy .
 void Point::Move(int dx, int dy)
@@ -59,15 +59,15 @@ int Point::Get_Y() const
 {
 	return Y;
 }
-// Set_X sets the value of X coordinate to x1
-void Point::Set_X(int x1)
+// Set_X sets the value of X coordinate to xval
+void Point::Set_X(int xval)
 {
-	X = x1;
+	X = xval;
 } 
-// Set_Y sets the value of Y coordinate to y1
-void Point::Set_Y(int y1)
+// Set_Y sets the value of Y coordinate to yval
+void Point::Set_Y(int yval)
 {
-	Y = y1;
+	Y = yval;
 } 
     
 void Point::print()
